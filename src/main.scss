@@ -119,13 +119,20 @@
     height: 0;
     border-top: 780px solid #F2F2F2; 
     border-left: 780px solid transparent;
-  }     
+  }  
+  
+  .mainContentP1 {
+    background: url('/img/brick.png') #00090c;
+    height: 1220px;
+    width:100%;
+  }
+  
   /*  Page 4   */
   .wrapperP4 {
    
     height: 635px;
     width: 100%;
-    background: blueviolet;
+    background:url('/img/Layer 3@1X.png')black;
      
   }
 
@@ -134,5 +141,5 @@
     display: flex;
     height: 770px;
     width: 100%;
-    background: red;
+    background:url('/img/brick.png') #00090c;
   }
