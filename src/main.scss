@@ -2,23 +2,33 @@
 @import "./src/assets/css-resetter.scss";
 @import"./assets/fonts.scss";
 
-
-
+.cover {
+  position:relative;
+  top:0;
+  left:0;
+  height: 5400px;
+  width:100%;
+  background: url('/img/Top Shapes.png') top right no-repeat ,
+              url('/img/Background for cover.png') top right 10px no-repeat ; 
+                        
+}
+      
 //page 1//
 
+*{border: 1px solid green;}
 
 .headerP1 {
- 
-  background:rgb(228, 223, 223);
+  
   display:flex;
-  height: 500px;
+  height: auto;
   width:100%;
   }
 
   .logoP1 {  
     display:flex;      
     justify-content: center;
-    height: 185px;
+    margin-left: 10px;
+    height: auto;
     width: 40%;
     min-width: 550px;      
     position: relative;
@@ -29,10 +39,11 @@
   display: flex;  
   position: absolute;  
   padding: 10px;
-  z-index: 100;
+  
 }
 
 .logoText {
+  margin-left: 10px;
   flex-direction:column;
   padding-left: 45px;
 }
@@ -56,48 +67,20 @@
     
   }
     .logoImage { 
-      position: absolute;      
-           
-      
-      
+      position: absolute; 
     }
 
     
-  .triangle-down1 {
-    position: absolute;    
-    margin-right:10% ;
-    width: 0;
-    height: 0;
-    border-left: 185px solid transparent;
-    border-right: 200px solid transparent;
-    border-top: 184px solid #019edb;
-    top: 0;
-    right: 20px; 
-    z-index: 5;
-   
-  }
-   .triangle-down2 {
-    position: absolute; 
-      
-    margin-right:10% ;
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-top: 184px solid #000000;
-    top: -105px;
-    left:235px;   
-    z-index: 4;
-   
-  }
+ 
+  
 
-
-  .navigationP1 {        
+  .navigationP1 { 
+    margin-left: 10px;       
     position: absolute;
     top: 0;
     right: 0;
     z-index: 5;
-    height: 185px;
+    height: auto;
     width:60%;
     display: flex;
     justify-content:flex-end;
@@ -114,45 +97,19 @@
     padding: 15px;    
     overflow: hidden;
   }
-  .triangle-top-right {
-
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 780px solid #F2F2F2; 
-    border-left: 780px solid transparent;
     
-  }  
   
-  .mainContentP1 {
-    position: absolute;
-    background: url('/img/brick.png') #000000;
-    height: 1220px;
-    width:100%;
-  }
   
-  .triangle-to-right {
-    position: absolute;
-    left:0;
-    top:-130px;
-    width: 0;
-    height: 0;
-    border-top: 170px solid transparent;
-    border-left: 190px solid #F2F2F2;
-    border-bottom: 190px solid transparent;    
-}
-
 .mainPhoto {
   display:flex;
   position: absolute;  
   background: #019EDB;
   transform: rotate(45deg);
   overflow: hidden;
-  height: 750px;
-  width: 750px;  
+  height: 50%;
+  width: 50%;  
+  
+  
   top: -250px;
   right: 85px;
   z-index:10;
