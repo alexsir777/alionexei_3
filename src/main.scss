@@ -11,7 +11,7 @@
  
   background:rgb(228, 223, 223);
   display:flex;
-  height: 645px;
+  height: 500px;
   width:100%;
   }
 
@@ -151,64 +151,34 @@
   background: #019EDB;
   transform: rotate(45deg);
   overflow: hidden;
-  height: 800px;
-  width: 800px;  
-  top: -449px;
-  right: 182px;
+  height: 750px;
+  width: 750px;  
+  top: -250px;
+  right: 85px;
   z-index:10;
   
   
 }
 .mainPhotoContainer{
 position:absolute;
+top:-40px;
+left:-270px;
 transform: rotate(-45deg);
-height: 930px;
-width: 1060px; 
-top:45px;
-right:-95px;
-background: url('/img/main_girl.png') no-repeat #000000;
-background-size:auto
+height: 925px;
+width: 1050px;
+background: url('/img/Layer 7@1X.png') no-repeat #000000;
+background-size:cover;
 
 }
 
+.blackContent {
+  position:absolute;
+  z-index:12;
+transform: rotate(-45deg);
+height: 350px;
+width: 350px; 
+top:-100px;
+left:110px;
+background: #000000;
 
-  /*  Page 2   */
-  
-  /*  Page 3   */
-  .wrapperP3 {
-    height:655px;
-    width: 100%;
-    background: url('/img/Layer 2@1X (1).png') #000000
-  }
-
-
-  /*  Page 4   */
-  .wrapperP4 {
-   position: absolute;
-    height: 635px;
-    width: 100%;
-    background:url('/img/Layer 3@1X.png') #000000;
-     
-  }
-
-  /*  Page 5   */
-
-  .wrapperP5 {
-    display: flex;    
-    height: 770px;
-    width: 100%;
-  }
-  
-  .headerP5{
-    height:155px;
-    width: 100%;
-    background: #019EDB;
-  }
-  .mainP5 {
-    display: flex;    
-    height: 550px;
-    width: 100%;
-    background:url('/img/brick.png') #000000;
-
-  }
-  
+}
