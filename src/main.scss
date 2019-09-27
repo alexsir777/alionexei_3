@@ -2,6 +2,7 @@
 @import "./src/assets/css-resetter.scss";
 @import"./assets/fonts.scss";
 
+
 .cover {
   position:relative;
   top:0;
@@ -20,24 +21,27 @@
 .headerP1 {
   
   display:flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: auto;
   width:100%;
   }
 
   .logoP1 {  
-    display:flex;      
-    justify-content: center;
+    display:flex; 
+    justify-content: center;     
+   padding: 30px;
     margin-left: 10px;
     height: auto;
     width: 40%;
     min-width: 550px;      
-    position: relative;
+    
   }
   
 
 .logoContent {
   display: flex;  
-  position: absolute;  
+  justify-content: space-between;  
   padding: 10px;
   
 }
@@ -45,7 +49,7 @@
 .logoText {
   margin-left: 10px;
   flex-direction:column;
-  padding-left: 45px;
+  
 }
 
   .creative, .tagline {
@@ -67,19 +71,13 @@
     
   }
     .logoImage { 
-      position: absolute; 
-    }
-
-    
+      padding: 5px; 
+     } 
  
   
 
   .navigationP1 { 
-    margin-left: 10px;       
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 5;
+    margin-left: 10px;   
     height: auto;
     width:60%;
     display: flex;
@@ -87,7 +85,7 @@
     align-items:flex-start;    
     flex-wrap: nowrap;
     padding-top:30px;
-    min-width: 950px;
+    
     overflow: hidden;
   }
   .navigationP1>a {    
