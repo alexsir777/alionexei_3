@@ -1,0 +1,25 @@
+member cards scss
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+    font-size: 2em;
+}
+
+.team_member_name_and_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.team_member_position {
+    color: rgb(251,156,6);
+}
+
+.team_member_photo {
+    border-radius: 50%;
+    padding-bottom: 1em;
+}

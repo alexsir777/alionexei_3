@@ -26,7 +26,54 @@
                <h1>Wi build it with passion </h1>
                <p class="textP1">Just to be clear, we do this for fun not for you, just kidding.</p>
                <button>read more</button>
+
            </div>
+
+           <section class="aboutUs">
+
+                <div  class="div" id="2011"><p class="p">2011</p></div>
+
+                <div class="tooltip"></div>
+  <div class="tooltip-content"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Tempore blanditiis, placeat minus</p></div>
+    <div class="tooltip-arrow"></div>
+    
+
+                <div class="div" id="2012"><p class="p">2012</p></div>
+
+                <div class="div" id="2013"><p class="p">2013</p></div>
+
+                <div class="div" id="2014"><p class="p">2014</p></div>
+                
+            </section>
+            <h2>This is our team</h2>
+            <p class="textP3">We are small but effective and ...</p>
+
+
+            <div class="team">
+                    @@include ('/partial/member_card.html'{
+                      "team_member_name": "Mark Once",
+                      "team_member_position": "Designer & Front-End Developer",
+                      "team_member_photo_path": "/img/Layer 3@1X.png",
+                      
+                    })
+
+                    @@include('./html/team_member_card.html', {
+                      "team_member_name": "Justin Twice",
+                      "team_member_position": "Founder & CEO",
+                      "team_member_portrait_path": "/img/Layer 1@1X.png",
+                      
+                    })
+
+                    @@include('./html/team_member_card.html', {
+                      "team_member_name": "Antonio Never",
+                      "team_member_position": "Someone & Somewhere",
+                      "team_member_portrait_path": "/img/Layer 1@2X.png"",
+                      
+                    })
+                </div>
+
+
        </main>
        <footer class="footer"></footer>
    </div>

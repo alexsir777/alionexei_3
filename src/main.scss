@@ -1,6 +1,7 @@
 @import "./src/assets/css-normalizer.scss";
 @import "./src/assets/css-resetter.scss";
 @import"./assets/fonts.scss";
+@import".partials/member_card.scss";
 
   
 
@@ -91,7 +92,7 @@ h1 {
     padding-top: 10%;   
 }
 
-.textP1 {
+.textP1.textP3 {
     font-family: 'Merriweather', serif; 
     font-size: 1.5em;
     padding-top: 0.2%;
@@ -102,4 +103,124 @@ button {
     width: 190px;
     border:1px solid #000000;
     margin-top: 5%;
+}
+
+.aboutUs{
+    height: 350px;
+    width: 250px;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+    cursor: pointer;
+    width: 100%;
+    background: rgb(101, 76, 211);
+    border-radius: 10px;
+    font-family: Century Gothic;
+    letter-spacing: 5px;
+  }
+  .div{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 4%;
+    margin-bottom: 50%;
+   transition-duration: 0.2s;
+  
+  }
+  .p:hover{
+    background:white;
+    color: black;
+  }
+  .div:nth-child(odd){
+    transform: perspective(300px) rotateY(45deg);
+    box-shadow: -2px 2px 7px gray;
+  }
+  .div:nth-child(even){
+    transform: perspective(300px) rotateY(-45deg);
+      box-shadow: 2px 2px 7px gray;
+  }
+  .div:hover{
+    transform: rotateY(0);
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 0px;
+  }
+
+  .tooltip {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  margin: 200px auto;
+  border: 1px solid gray;
+  background-color: aqua;
+  cursor: pointer;
+  }
+
+  &:hover
+    .tooltip-content {
+      display:block;
+      animation: tooltip .7s ease forwards;
+    }
+      
+.tooltip-content {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: calc(100% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 350px;
+  min-width: 300px;
+  padding: 5px;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.15);
+}
+.tooltip-arrow {
+  position: absolute;
+  z-index: 1;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 25px;
+  overflow:hidden;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 8px 8px 9px -4px rgba(0,0,0,.15);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+@keyframes tooltip {
+  0% {
+    
+  }
+  100% {
+    opacity: 1;
+    bottom: calc(100% + 30px);
+  }
+}
 }
